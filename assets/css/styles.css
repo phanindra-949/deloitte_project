@@ -1,15 +1,16 @@
-.gparent{
+.gparent {
     background-color: rgb(200, 202, 204);
     height: 290px;
     border-radius: 15px;
-
 }
-.parent{
+
+.parent {
     display: flex;
     justify-content: center;
     gap: 35px;
 }
-.child{
+
+.child {
     border-radius: 50px;
     height: 150px;
     width: 170px;
@@ -17,65 +18,69 @@
     background-color: white;
 }
 
-.child1_img{
+.child1_img {
     height: 80px;
 }
-.myh2{
+
+.myh2 {
     text-align: center;
     position: relative;
     right: 500px;
     top: 30px; 
 }
 
-.mylink{
+.mylink {
     text-decoration: none;
     color: rgb(86, 98, 186);
 }
 
-.myh4{
-    
+.myh4 {
     text-align: end;
     position: relative;
     top: -25px;
-    left: -150px
-    
+    left: -150px;
 }
 
-.myh6{
+.myh6 {
     text-align: center;
 }
 
-img{
+img {
     position: relative;
     left: 25%;
     border-radius: 20px;
     height: auto;
     width: 50%;
-    
 }
+
 .child:hover {
     cursor: pointer; /* Changes cursor */
-    height:150px;
-    
+    height: 150px;
     background-color: rgb(139, 142, 142); /* Highlights the box */
     box-shadow: 10px 10px 10px rgba(42, 19, 19, 0.3); /* Adds shadow effect */
     border: 2px solid rgb(28, 30, 28); /* Highlights with a border */
-  }
-.tooltip{
+}
+
+.tooltip {
     visibility: hidden;
     width: 120px;
-    
     background-color: black;
     color: #fff;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+}
 
-  }
-  .child:hover .tooltip {
+.child:hover .tooltip {
     visibility: visible;
+}
 
-  }
+.child img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.child img:hover {
+    transform: scale(1.2); /* Scale image on hover */
+}
