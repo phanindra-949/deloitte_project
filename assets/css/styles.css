@@ -1,6 +1,7 @@
 .gparent{
     background-color: rgb(200, 202, 204);
     height: 290px;
+    border-radius: 15px;
 
 }
 .parent{
@@ -49,7 +50,8 @@ img{
     left: 25%;
     border-radius: 20px;
     height: auto;
-    width: 80px;
+    width: 50%;
+    
 }
 .child:hover {
     cursor: pointer; /* Changes cursor */
@@ -59,7 +61,7 @@ img{
     box-shadow: 10px 10px 10px rgba(42, 19, 19, 0.3); /* Adds shadow effect */
     border: 2px solid rgb(28, 30, 28); /* Highlights with a border */
   }
-  .tooltip{
+.tooltip{
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -67,11 +69,12 @@ img{
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-   
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+
   }
   .child:hover .tooltip {
     visibility: visible;
+
   }
