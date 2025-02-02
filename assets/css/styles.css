@@ -59,3 +59,19 @@ img{
     box-shadow: 10px 10px 10px rgba(42, 19, 19, 0.3); /* Adds shadow effect */
     border: 2px solid rgb(28, 30, 28); /* Highlights with a border */
   }
+  .tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  .child:hover .tooltip {
+    visibility: visible;
+  }
