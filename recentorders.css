@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0e5d8; /* Light beige background */
+}
+
+h1 {
+    color: rgb(0, 0, 0); /* Dark red for the heading */
+}
+
+.section {
+    margin-bottom: 40px;
+    position: relative; /* Position relative for arrow placement */
+}
+
+.order-container {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    gap: 10px;
+    align-items: stretch; /* Ensure all boxes are aligned */
+}
+
+.order {
+    border: 2px solid rgb(0, 0, 0); /* Vibrant orange border */
+    border-radius: 8px;
+    width: 25%; /* Updated width for better fitting */
+    height: 300px; /* Set a fixed height for the order boxes */
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.order:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFE4E1; /* Light pink on hover */
+}
+
+.order img {
+    width: 100%; /* Ensure the image fills the box */
+    height: 100%; /* Ensure the image fills the box */
+    object-fit: cover; /* Cover the box without leaving extra space */
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroll-left, .scroll-right {
+    background-color:rgb(0, 0, 0); /* Black background */
+    color: white; /* White text */
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
